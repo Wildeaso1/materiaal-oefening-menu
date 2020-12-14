@@ -1,19 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 /* vloeiend scrollen zie: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp  */
+html{
+    scroll-behavior: smooth;
+}
 body {
     padding: 0;
     margin: 0;
     background-color: thistle;
     font-size: 26px;
 }
+nav {
+    background-color: rgb(158, 140, 158)
+}
 
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li{
+    flex: 1 0 330px;
+}
+
+nav li + li{
+    border-left: solid 2px wheat;
+}
+
+nav a{
+    color: wheat;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Cutive Mono', monospace;
+}
+
+nav a:hover{
+    background-color: black;
+    color: white;
+}
 .header {
     padding: 2em;
     margin: 0;
     text-align: center;
     font-size: 30px;
-    collor: whitesmoke;
-    background-image: url(../afb/Kerstmenu.jpeg)
+    color: whitesmoke;
+    background-image: url(../afb/Kerstmenu.jpeg);
     background-position: center;
+}
+
+li{
+    font-family: 'Open Sans', sans-serif;
 }
 
 main {
@@ -37,11 +79,24 @@ section header {
     background-position: center;
     padding: 30px;
 }
+#voor header{
+    background-image: url(../afb/bietentartaar.jpg);
+}
+#hoofd header{
+    background-image: url(../afb/pastinaak.jpg);
+}
+#bij header{
+    background-image: url(../afb/stoofpeertjes.jpg);
+}
+#na header{
+    background-image: url(../afb/tiramisu.jpg);
+}
 h1, h2, h4 {
     color: white;
     text-align: center; 
     text-shadow: 0 0 13px darkslategrey; 
     letter-spacing: 7px;
+    font-family: 'Space Mono', monospace;
 }
 
 h4 {
@@ -50,6 +105,7 @@ h4 {
 h6 {
     margin-bottom: -25px;
     font-size: 20px;
+    font-family: 'Space Mono', monospace;
 }
 
 section ol {
